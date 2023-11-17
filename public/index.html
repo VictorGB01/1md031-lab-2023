@@ -3,55 +3,69 @@
    <head>
        <title>Victors Burger ordering service</title>
        <meta charset="utf-8"/>
+       <link rel="stylesheet" type="text/css" href="style.css">
    </head>
 
-   <header>
-    <h1>Burgers Online</h1>
+   <header class="heading-with-image">
+        <h1>Burger Joint</h1>
+        <img src="/img/JapanSkyline.jpg" id= "skyline" alt="Bugger" width= "100%" height="auto">
     </header>
 
-   <body>
-    <hr>
 
-    <section>
-    <div style="display: inline-block;">
- 
+   <body>
+
+    <section id="section1">
         <h2>Select Burger</h2>
         This is where you select your burger
         <br />
-    
+    <div class="wrapper">
+    <div class="box a" > 
         <h4>SuperMegaHuge Burger</h4>
         <img src="/img/SuperMegaHuge Burger.jpg" alt="Bugger" title="SuperMegaHuge Burger" width="300" height="200">
         <ul>
             <li>4000 KCal</li>
-            <li>Does not come with vegeterian option</li>
+            <li><Ingredients>No veggie option</Ingredients></li>
             <li>Booooom! Big Burger</li>
         </ul>
     </div>
 
-    <div style="display: inline-block;">
+    <div class="box b" >
         <h4>Mini Burger</h4>
         <img src="/img/MiniBurger.jpg" alt="Bugger" title="SuperMegaHuge Burger" width="300" height="200">
         <ul>
             <li>10 KCal</li>
-            <li>The More the marrier</li>
+            <li><Ingredients>Food</Ingredients></li>
             <li>They are almost free!</li>
         </ul>
     </div>
 
-    <div style="display: inline-block;">
+    <div class="box c">
         <h4>LeafBread Burger</h4>
         <img src="/img/LeafbreadBurger.jpg" alt="Bugger" title="SuperMegaHuge Burger" width="300" height="200">
         <ul>
             <li>-100 KCal</li>
-            <li>Vegetarian</li>
+            <li><Ingredients>Vegetarian</Ingredients></li>
             <li>If you dont like it, you dont get a new one</li>
         </ul>
     </div>
+        </div>
+
+
     </section>
     
-    <hr>
 
-    <section>
+    <section class="ingredients">
+       
+            <span id="ingredients">
+                
+            </span>
+       
+     </section>
+
+
+
+
+    <section id="section2" >
     <h3>Customer information</h1>
     Here you provide all information before you purchase your burger
     <br />
@@ -82,10 +96,6 @@
         </select>
      </p>
 
-
-
-
-Gender
 <br />
         <label>
           <input type="radio" name="gender" value="male" checked="checked">
@@ -106,21 +116,7 @@ Gender
         <img src="img/checkmark.png" width="30" height="20">
         Submit
       </button>
-   
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+      
     </section>
 
     <br />

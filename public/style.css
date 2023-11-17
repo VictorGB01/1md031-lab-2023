@@ -1,0 +1,86 @@
+@import 'https://fonts.googleapis.com/css?family=Pacifico|Dosis';
+
+
+
+body {
+    font-family: "Arial";
+    font-size: 1.5em;
+}
+
+
+.heading-with-image img {
+  opacity:0.9;
+}
+.heading-with-image h1 {
+    position: absolute; /* Position the heading absolutely within its container */
+    top: 50%; /* Adjust the top position as needed */
+    left: 50%; /* Adjust the left position as needed */
+    transform: translate(-50%, -50%); /* Center the heading both horizontally and vertically */
+    z-index: 1; /* Set a higher z-index to make sure the text appears on top of the image */
+    text-align: top;
+    color: rgb(0, 0, 0);
+
+}
+
+
+
+ingredients {
+    color: rgb(45, 200, 50);
+    text-transform: uppercase;
+}
+
+#section1 {
+    background-color: black;
+    padding: 10px 23px 40px;
+    color: rgb(255, 255, 255);
+    border: 10px solid rgb(201, 81, 7);
+}
+#section2 {
+    background-color: rgb(173, 128, 20);
+    padding: 10px 23px 40px;
+    border: 10px solid rgb(201, 81, 7);
+}
+
+.box{
+    margin: 50px 50px 10px 20px;
+    border: 5px dotted rgb(201, 81, 7);
+    padding: 10px 10px 10px;
+}
+
+
+
+.wrapper {
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: repeat(3, 1fr); 
+    background-color: #000000;
+    color: #ffffff;
+}
+
+.box {
+    background-color: #444;
+    color: #fff;
+    border-radius: 5px;
+    padding: 20px;
+    font-size: 150%;
+}
+
+.a {
+    
+}
+.b {
+   
+}
+.c {
+  
+}
+
+
+button{
+    margin: 10px 10px 10px 10px;
+}
+button:hover {
+    color: blue;
+    background-color: black;
+    cursor: pointer;
+  }
