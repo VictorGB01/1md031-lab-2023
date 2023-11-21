@@ -8,6 +8,9 @@ body {
 }
 
 
+.heading-with-image {
+    position: relative; /* Set the positioning context to relative */
+  }
 .heading-with-image img {
   opacity:0.9;
 }
@@ -17,7 +20,7 @@ body {
     left: 50%; /* Adjust the left position as needed */
     transform: translate(-50%, -50%); /* Center the heading both horizontally and vertically */
     z-index: 1; /* Set a higher z-index to make sure the text appears on top of the image */
-    text-align: top;
+    text-align: center;
     color: rgb(0, 0, 0);
 
 }

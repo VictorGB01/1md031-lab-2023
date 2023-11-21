@@ -1,9 +1,26 @@
 <template>
     <div id="orders">
       <div id="orderList">
+        
         <div v-for="(order, key) in orders" v-bind:key="'order'+key">
-          #{{ key }}: {{ order.orderItems.join(", ") }}
+          <hr>
+          {{"Order Number: "+ key }}
+          <ul>
+          <li v-for="(item, itemKey) in order.orderItems" :key="itemKey">
+            {{ itemKey }}: {{ item }}
+          </li>
+          </ul>
+
+          <ul>
+          <li v-for="(item,itemKey) in order.customerDetails" :key="itemKey">
+            {{ itemKey }}: {{ item }}
+          </li>
+          </ul>
+          <hr>
         </div>
+
+
+
         <button v-on:click="clearQueue">Clear Queue</button>
       </div>
       <div id="dots" v-bind:style="{ background: 'url(' + require('../../public/img/polacks.jpg')+ ')' }">
@@ -42,8 +59,16 @@
     position: absolute;
     z-index: 2;
     color:black;
-    background: rgba(255,255,255, 0.5);
+    background: rgba(23, 6, 6, 0.5);
     padding: 1em;
+
+    font-family: "Lobster ";
+    font-size: 14px;
+    font-weight: bold;
+
+
+
+
   }
   #dots {
     position: relative;
@@ -58,7 +83,7 @@
   #dots div {
     position: absolute;
     background: black;
-    color: white;
+    color: rgb(15, 173, 91);
     border-radius: 10px;
     width:20px;
     height:20px;
